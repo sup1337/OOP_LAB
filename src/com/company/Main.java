@@ -17,7 +17,10 @@ public class Main{
         else
             System.out.println(((number & (1 << (order - 1))) >> (order - 1)));
     }
-
+public static void CountBits(int n ){
+    System.out.println(Integer.toBinaryString(n));
+    System.out.println(Integer.bitCount(n));
+}
 
     public static void main(String[]args) {
         String szo = "ALMAFA";
@@ -36,8 +39,7 @@ public class Main{
         String names ="Laszlo Hunor Miklos Akos";
         if (names.length() == 0)
             return;
-        //split the string using 'space'
-        //and print the first character of every word
+       
         String words[] = names.split(" ");
         for(String word : words) {
             System.out.print(Character.toUpperCase(word.charAt(0)) + " ");
@@ -45,8 +47,11 @@ public class Main{
         System.out.println();
         double x[] ={7, 1, -3, 45, 9};
         System.out.printf("MAX: %6.2f\n", maxElement( x ));
-
+        int n = 31;
         getBit(13,1);
+        for(int i=0 ; i<n; i++){
+            CountBits(i);
+        }
 
 
 
