@@ -10,6 +10,26 @@ public class Main{
         }
         return max;
     }
+    public static void  maxElement2( double array[] ) {
+        double max[] = {Double.NEGATIVE_INFINITY,
+                Double.NEGATIVE_INFINITY};
+        if (array.length == 0) {
+            for (int i = 0; i < array.length; i++) {
+                if (max[1] < array[i]) {
+                    max[1] = array[i];
+                }
+                for (int j = 0; j < array.length; j++) {
+                    if (max[2] < array[j + 1]) {
+                        max[2] = array[j + 1];
+                    }
+                }
+            }
+            for (int k = 0; k < 1; k++) {
+                System.out.println(max[k]);
+            }
+        }
+    }
+
     public static void getBit(int number, int order){
         if(order < 0){
             System.out.println(1);
@@ -39,7 +59,7 @@ public static void CountBits(int n ){
         String names ="Laszlo Hunor Miklos Akos";
         if (names.length() == 0)
             return;
-       
+
         String words[] = names.split(" ");
         for(String word : words) {
             System.out.print(Character.toUpperCase(word.charAt(0)) + " ");
@@ -52,6 +72,7 @@ public static void CountBits(int n ){
         for(int i=0 ; i<n; i++){
             CountBits(i);
         }
+    maxElement2(x);
 
 
 
