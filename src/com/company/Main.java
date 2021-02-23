@@ -1,5 +1,13 @@
 package com.company;
 
+
+/**
+ * Ami megvan megfelelő, de nem sok.
+ * Próbáljuk még jobban rendezni a kódot. A main zsúfolt.
+ * Használjuk ki az IDE nyújtotta lehetőségeket.
+ * A projekt legyen mindig egy külön folderben, és úgy töltsd fel.
+ * Ha még egy projekt kellett volna ehhez a laborhoz összevisszaság lett volna.
+ */
 public class Main{
     public static double maxElement( double array[] ){
         double max = Double.NEGATIVE_INFINITY;
@@ -22,6 +30,11 @@ public static void CountBits(int n ){
     System.out.println(Integer.bitCount(n));
 }
 
+    /**
+     * A main függvényt inkább hagyjuk legfelül. Ez a standard általában.
+     *
+     */
+
     public static void main(String[]args) {
         String szo = "ALMAFA";
         String name = "Laszlo Hunor";
@@ -37,6 +50,10 @@ public static void CountBits(int n ){
             System.out.println();
         }
         String names ="Laszlo Hunor Miklos Akos";
+        /**
+         * Kerüljük a redundáns kódrészeket. Ahol kell legyen ellenőrzés, de ahol felesleges ott ne legyen.
+         * Itt még az IDE is jelzi, hogy nem szükséges.
+         */
         if (names.length() == 0)
             return;
        
