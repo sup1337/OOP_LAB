@@ -1,7 +1,9 @@
 package com.company;
 
 public class Datum {
-    private int d, ho, nap;
+    private int ev, ho, nap;
+
+
 
     //Konstruktor
     public Datum(int pev, int pho, int pnap) {
@@ -10,21 +12,21 @@ public class Datum {
             ho = pho;
             nap = pnap;
         }
-
-        public static boolean szokoEv ( int year){
-            boolean leap = false;
-            if (year % 4 == 0) {
-                if (year % 100 == 0) {
-                    if (year % 400 == 0)
-                        leap = true;
-                    else
-                        leap = false;
-                } else
-                    leap = true;
-            } else
-                leap = false;
+        System.out.println("Invalid Date");
+    }
+        public int getEv() {
+            return this.ev;
         }
-        static boolean isValidDate ( int d, int m, int y){
+        public int getHo() {
+            return this.ho;
+        }
+        public int getNap() {
+            return this.nap;
+        }
+
+
+
+        static boolean isValidDate( int y, int m, int d){
             if (y > 9999 || y < 1800)
                 return false;
             if (m < 1 || m > 12)
@@ -42,5 +44,21 @@ public class Datum {
                 return (d <= 30);
             return true;
         }
+    public static boolean szokoEv(int year){
+        boolean leap = false;
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0)
+                    leap = true;
+                else
+                    leap = false;
+            } else
+                leap = true;
+        } else
+            leap = false;
+        return leap;
+    }
+    public String toString(){
+        return ev+" "+ho+" "+nap;
     }
 }
