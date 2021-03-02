@@ -14,19 +14,20 @@ public class Datum {
         }
         System.out.println("Invalid Date");
     }
-        public int getEv() {
-            return this.ev;
-        }
-        public int getHo() {
-            return this.ho;
-        }
-        public int getNap() {
-            return this.nap;
-        }
 
+    public int getEv() {
+        return this.ev;
+    }
 
+    public int getHo() {
+        return this.ho;
+    }
 
-        static boolean isValidDate( int y, int m, int d){
+    public int getNap() {
+        return this.nap;
+    }
+
+    static boolean isValidDate(int y, int m, int d){
             if (y > 9999 || y < 1800)
                 return false;
             if (m < 1 || m > 12)
