@@ -1,5 +1,7 @@
 package lab3_1;
 
+import java.util.ArrayList;
+
 public class Customer {
    private  String firstName , lastName;
    private BankAccount account;
