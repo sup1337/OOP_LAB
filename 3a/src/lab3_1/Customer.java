@@ -4,8 +4,10 @@ public class Customer {
    private  String firstName , lastName;
    private BankAccount account;
 
-    Customer customer1 = new Customer("John", "BLACK");
-
+    public Customer(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public BankAccount getAccount() {
         return account;
@@ -29,9 +31,9 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", account=" + account +
+                " " + firstName + '\'' +
+                ", " + lastName + '\'' +
+                "," + account+
                 '}';
     }
 
