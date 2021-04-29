@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9f95cfb-d597-4d44-9cfa-53236d18a1ed" name="Default Changelist" comment="" />
+    <list default="true" id="f9f95cfb-d597-4d44-9cfa-53236d18a1ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/lab_9/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_9/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_9/MyDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_9/MyDate.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +84,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\laszl\Desktop\OOP\OOP_LAB\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lab_9.Main" />
@@ -96,7 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f9f95cfb-d597-4d44-9cfa-53236d18a1ed" name="Default Changelist" comment="" />
@@ -104,7 +125,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619674363343</updated>
+      <workItem from="1619674365174" duration="1293000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

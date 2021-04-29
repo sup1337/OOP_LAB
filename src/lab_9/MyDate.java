@@ -41,11 +41,7 @@ public class MyDate implements Comparable<MyDate>{
 
     @Override
     public int compareTo(MyDate o) {
-        /*
-        LocalDate date1=   LocalDate.of(this.year, this.month, this.day);
-        LocalDate date2=   LocalDate.of(o.year, o.month, o.day)     ;
-        return Period.between(date1, date2).getDays();
-        */
+
 
         if (this.year > o.year) {
             return -1;
