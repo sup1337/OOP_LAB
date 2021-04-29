@@ -10,9 +10,9 @@ public class Main {
         ArrayList<MyDate> datetimes= new ArrayList<>();
         int year=2021;
         for(int i=0; i<10; i++){
-            int momnth= ThreadLocalRandom.current().nextInt(1, 13);
+            int month= ThreadLocalRandom.current().nextInt(1, 13);
             int day= ThreadLocalRandom.current().nextInt(1, 32);
-            MyDate date= new MyDate(year, momnth, day);
+            MyDate date= new MyDate(year, month, day);
             if(date.isValid())
             {
                 datetimes.add(date);
