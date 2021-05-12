@@ -1,6 +1,6 @@
 package lab_11;
 
-public class Student  {
+public class Student implements Comparable<Student> {
     private int id;
     private String lastname;
     private String firstname;
@@ -32,7 +32,20 @@ public class Student  {
     }
 
 
+    @Override
+    public int compareTo(Student o) {
+        return 0;
+    }
 
-
-    
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", lastname='" + lastname + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", magyar=" + magyar +
+                ", roman=" + roman +
+                ", matek=" + matek +
+                '}';
+    }
 }
