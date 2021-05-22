@@ -1,10 +1,10 @@
-package sample;
+package sample.Registration;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 
-public class Controller {
+public class RegistrationController {
     private int counter=0;
     @FXML
     private Button firstButton;

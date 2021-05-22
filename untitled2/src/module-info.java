@@ -4,5 +4,6 @@ module Test {
     requires javafx.fxml;
 
     opens sample;
+    opens sample.first;
 
 }
