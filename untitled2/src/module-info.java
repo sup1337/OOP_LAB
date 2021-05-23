@@ -5,5 +5,6 @@ module Test {
 
     opens sample;
     opens sample.first;
+    opens sample.registration;
 
 }

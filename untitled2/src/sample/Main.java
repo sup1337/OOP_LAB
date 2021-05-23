@@ -3,6 +3,7 @@ package sample;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -18,6 +19,7 @@ import javafx.stage.Stage;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
+
 public class Main extends Application {
 
     private Text firstName, lastName, email;
@@ -26,10 +28,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-//        Parent root = FXMLLoader.load(getClass().getResource("first/sample.fxml"));
-//        primaryStage.setTitle("First App");
-//        primaryStage.setScene(new Scene(root, 300, 275));
-//        primaryStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("first/sample.fxml"));
+        primaryStage.setTitle("First App");
+        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.show();
 
 
         GridPane gridPane = new GridPane();

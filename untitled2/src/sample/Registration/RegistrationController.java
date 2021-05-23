@@ -1,4 +1,4 @@
-package sample.Registration;
+package sample.registration;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
