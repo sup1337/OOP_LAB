@@ -1,0 +1,50 @@
+package package1;
+
+public class MyDate implements Comparable<MyDate> {
+    private int year = -1;
+    private int month = -1;
+    private int day = -1;
+
+    public MyDate(int year, int month, int day) {
+        if (DateUtil.isValidDate(year, month, day)) {
+            this.year = year;
+            this.month = month;
+            this.day = day;
+        }
+
+    }
+
+    public int getYear() {
+        return this.year;
+    }
+
+    public int getMonth() {
+        return this.month;
+    }
+
+    public int getDay() {
+        return this.day;
+    }
+
+    public boolean isValid() {
+        return this.year != -1;
+    }
+
+    public String toString() {
+        return String.format("%d-%02d-%02d", this.year, this.month, this.day);
+    }
+
+    public int compareTo(MyDate o) {
+        if (this.year > o.year) {
+            return -1;
+        } else if (this.year == o.year) {
+            if (this.month > o.month) {
+                return -1;
+            } else {
+                return this.month == o.month ? Integer.compare(o.day, this.day) : 1;
+            }
+        } else {
+            return 1;
+        }
+    }
+}
